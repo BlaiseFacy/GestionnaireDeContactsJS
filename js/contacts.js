@@ -35,10 +35,12 @@ Contacts.prototype.listerContacts = function () {
 // Fonction permettant d'ajouter un contact grâce à une IHM
 Contacts.prototype.ajouterContactForm = function () {
     let nom = "";
+    // On contrôle que la chaine n'est pas vide
     while (nom == null || nom == "") {
         nom = prompt(`Entrez le nom du nouveau contact :`, "").trim();
     }
     let prenom = "";
+    // On contrôle que la chaine n'est pas vide
     while (prenom == null || prenom == "") {
         prenom = prompt(`Entrez le prénom du nouveau contact :`, "").trim();
     }
